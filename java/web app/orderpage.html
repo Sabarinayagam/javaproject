@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="orderpage.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="initial-letter-sr-logo-design-3017928.jpg" alt="" class="im"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="arrow">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="total">
+        <div class="con">
+            <h1>Your Order </h1>
+        </div>
+        <div class="content">
+            <div class="img"><img src="f4.avif" alt="Biryani"></div>
+            <p>Restaurant Name : Sabari Restoranent</p>
+            <p>Dishe Name :</p>
+            <p>Qty : <span>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+            </span></p>
+            <p>price : <span></span><del>Rs:200</del>&nbsp; Rs:150</span></p>
+              
+            <button class="btnn">Order</button>
+        </div>
+    </div>
+    <footer>
+        <h1 style="margin-left: 3%;">Sabari Restaurant:</h1>
+        <div class="pp1">
+            <p>Vadapalani</p>
+            <p>Guindy</p>
+            <p>Velachery</p>
+            <p>Adyar</p>
+            <p>Tambaram</p>
+        </div>
+    </footer>
+
+    <script>
+        var btn=document.querySelector(".arrow");
+        links=document.querySelector("ul");
+       btn.addEventListener("click",()=>{
+        links.classList.toggle("display");
+       })
+    </script>
+</body>
+</html>
